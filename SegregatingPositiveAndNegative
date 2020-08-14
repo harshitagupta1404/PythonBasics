@@ -1,0 +1,14 @@
+# Segregating positive and negative numbers in array
+
+n=int(input())
+
+lst=[]
+for i in range(n):
+    lst.append(int(input()))
+
+j=0
+for i in range(n):
+    if lst[i]<0:
+        lst[i],lst[j]=lst[j],lst[i]
+        j=j+1
+print(lst)
