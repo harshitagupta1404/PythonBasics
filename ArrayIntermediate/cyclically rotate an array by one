@@ -1,0 +1,7 @@
+Write a program to cyclically rotate an array by one.
+[Practice here: https://practice.geeksforgeeks.org/problems/cyclically-rotate-an-array-by-one/0]
+
+def rotate( arr, n):
+    last=arr.pop()
+    arr.insert(0,last)
+    return arr
